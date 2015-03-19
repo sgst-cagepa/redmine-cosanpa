@@ -45,6 +45,5 @@ namespace :deploy do
     end
   end
 
-  after :deploy, "deploy:stop"
-  after :deploy, "deploy:start"
+  after :deploy, "deploy:restart"
 end
