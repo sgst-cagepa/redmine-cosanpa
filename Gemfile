@@ -9,6 +9,7 @@ gem "mime-types"
 gem "protected_attributes"
 gem "actionpack-action_caching"
 gem "actionpack-xml_parser"
+gem 'dotenv-rails'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin, :jruby]
@@ -82,6 +83,11 @@ end
 group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
+
+  gem 'capistrano'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler', '~> 1.1.1'
+  gem 'capistrano-rails', '~> 1.1.1'
 end
 
 group :test do
