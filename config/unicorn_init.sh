@@ -15,7 +15,7 @@ TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/var/www/redmine/current
 PID=/tmp/.unicorn.redmine.pid
 CMD="cd $APP_ROOT; bundle exec unicorn_rails -D -c $APP_ROOT/config/unicorn.rb -E production"
-AS_USER=jenkins
+AS_USER=suporte
 set -u
 
 OLD_PIN="$PID.oldbin"
